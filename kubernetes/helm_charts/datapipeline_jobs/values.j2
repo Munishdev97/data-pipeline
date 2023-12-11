@@ -174,7 +174,7 @@ async-questionset-publish:
       metadata.list={{ cloudstorage_metadata_list }}
       relative_path_prefix="{{ cloudstorage_relative_path_prefix }}"
       read_base_path= {{ cloudstorage_base_path }}
-      write_base_path= "{{ valid_cloudstorage_base_urls }}"
+      write_base_path= {{ valid_cloudstorage_base_urls }}
     }
 
   flink-conf: |+
